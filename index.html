@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="author" content="Aya Mitani" />
     <meta name="author" content="Doctoral Seminar Series Winter 2022" />
-    <meta name="date" content="2022-04-03" />
+    <meta name="date" content="2022-04-07" />
     <script src="index_files/header-attrs/header-attrs.js"></script>
     <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
   </head>
@@ -16,7 +16,7 @@ class: center, middle, inverse, title-slide
 # Write your own R package and share it on GitHub
 ### Aya Mitani
 ### Doctoral Seminar Series Winter 2022
-### 2022-04-03
+### 2022-04-07
 
 ---
 
@@ -191,7 +191,7 @@ library(roxygen2)
 library(usethis)
 ```
 
-* Then, delete the NAMESPACE file
+* Then, **delete** the NAMESPACE file
 * Document your function by adding `roxygen2` comments (see next slide)
     + Comment lines begin with #’
     + Place comment lines directly above the function
@@ -423,7 +423,7 @@ git config --global user.name
 git config --global user.email
 ```
 
-Or use **R**
+Or with `usethis` package
 
 ```r
 library(usethis) 
@@ -435,7 +435,7 @@ git_sitrep()
 
 ---
 
-## Create a new repository in GitHub
+## Method 1: Create a new repository in GitHub
 
 * Repository name should equal the package name
 * Make it public
@@ -444,7 +444,7 @@ git_sitrep()
 
 ---
 
-## Push your package to GitHub
+## Method 1: Push your package to GitHub
 
 * Open Terminal in RStudio (*Tools* &gt; *Terminal* &gt; *New Terminal*)
 
@@ -467,6 +467,29 @@ git push -u origin master
   + References
   + Short vignette
 * You now have a package that you can **share** with others!
+
+---
+
+## Method 2: With `usethis` package
+
+Initialize version control of your slides with git
+
+```r
+usethis::use_git()
+```
+Say yes to "Is it ok to commit?"
+
+Connect your local project with a GitHub repo
+
+```r
+usethis::use_github()
+```
+Say yes to "Is it ok to commit?"
+
+* This will create a new GitHub repo with default URL (https://github.com/github_username/yourpackage)
+* The GitHub repo contains all of your package project files 
+* The GitHub repo will automatically open up in your browser
+
 
 ---
 
