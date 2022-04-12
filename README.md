@@ -3,7 +3,7 @@
 Slides are available at https://ayamitani.github.io/rpackage-github-tutorial/
 
 ### Abstract
-R package development is an important skill to have as reproducibility and accesibility of results from scientific research are highly valued.
+R package development is an important skill to have as reproducibility and accessibility of results from scientific research are highly valued.
 For this week's seminar, I will show the basic steps to develop an R package using the devtools package. 
 I will also present on how to make your package available for download from your GitHub account. 
 If you want to follow along, please make sure you have the following three things set up on your computer.
