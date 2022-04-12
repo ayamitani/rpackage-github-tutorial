@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="author" content="Aya Mitani" />
     <meta name="author" content="Doctoral Seminar Series Winter 2022" />
-    <meta name="date" content="2022-04-07" />
+    <meta name="date" content="2022-04-12" />
     <script src="index_files/header-attrs/header-attrs.js"></script>
     <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
   </head>
@@ -16,7 +16,7 @@ class: center, middle, inverse, title-slide
 # Write your own R package and share it on GitHub
 ### Aya Mitani
 ### Doctoral Seminar Series Winter 2022
-### 2022-04-07
+### 2022-04-12
 
 ---
 
@@ -83,20 +83,23 @@ class: center, middle, inverse, title-slide
 ## What do you need to write an R package?
 
 - R Studio (https://rstudio.com/)
-- `devtools` \&amp; `roxygen2` \&amp; `usethis` packages
+- Packages
+  + `devtools` 
+  + `roxygen2` 
+  + `usethis` 
 - Git (install from https://git-scm.com/)
 - GitHub account (https://github.com/)
 - `Rtools` package (https://cran.r-project.org/bin/windows/Rtools/)
   + Not necessary if you stick to base R and add-on packages on CRAN 
   + Good idea to install it eventually
 
-### Some other useful packages
+#### Some other useful packages
 
 - `here` 
 - `available`
 
 &lt;div align="center"&gt;
-&lt;img src="images/Rstudio.png" height=100&gt;
+&lt;img src="images/Rstudio.png" height=80&gt;
 &lt;/div&gt;
 
 ---
@@ -307,14 +310,14 @@ Suggests:
 ```r
 # I like to use the here package to locate my files
 library(here)
-exdata &lt;- read.table(here("exdata.txt"), header = TRUE)
+toydata &lt;- read.table(here("toydata.txt"), header = TRUE)
 # Alternatively, you can specify the exact location to your file by writing out the full path
 ```
 
 * Save with `.rda` extension in `data/` 
 
 ```r
-use_data(exdata)
+use_data(toydata)
 ```
 
 ---
@@ -325,9 +328,9 @@ Every data set should come with a description
 
 * Create a `.R` file and add `roxygen2` comments
 * Write the name of the data at the end (see next slide)
-* Save the file in `R/` subdirectory with the name `exdata.R`
+* Save the file in `R/` subdirectory with the name `toydata.R`
 * `devtools::document()` to convert the comments to documentation
-* See the documentation by `?exdata`
+* See the documentation by `?toydata`
 
 ---
 
@@ -353,7 +356,7 @@ Every data set should come with a description
 #' @references Price, C.J., Kimmel, C.A., Tyl, R.W. and Marr, M.C. (1985).
 #' The developmental toxicity of ethylene glycol in rats and mice.
 #' Toxicological Applications in Pharmacology, 81, 113-127.
-"exdata" 
+"toydata" 
 ```
 
 ---
