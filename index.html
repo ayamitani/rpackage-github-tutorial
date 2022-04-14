@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="author" content="Aya Mitani" />
     <meta name="author" content="Doctoral Seminar Series Winter 2022" />
-    <meta name="date" content="2022-04-12" />
+    <meta name="date" content="2022-04-14" />
     <script src="index_files/header-attrs/header-attrs.js"></script>
     <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
   </head>
@@ -16,7 +16,7 @@ class: center, middle, inverse, title-slide
 # Write your own R package and share it on GitHub
 ### Aya Mitani
 ### Doctoral Seminar Series Winter 2022
-### 2022-04-12
+### 2022-04-14
 
 ---
 
@@ -30,7 +30,7 @@ class: center, middle, inverse, title-slide
 - Collection of code, data, documentation developed by R community
 - Addresses particular problem with specialized statistical technique, graphical device, etc. 
 - Core set of packages come with base R
-- $&gt;$15,000 Additional packages available from CRAN, Bioconductor, Omegahat, GitHub, etc.
+- `\(&gt;15,000\)` Additional packages available from CRAN, Bioconductor, Omegahat, GitHub, etc.
 - Popular R packages 
   + `dplyr`
   + `ggplot2`
@@ -129,9 +129,9 @@ class: center, middle, inverse, title-slide
 
 ### Some tips
 
-* Make it simple \&amp; short
+* Make it simple &amp; short
 * Make it unique (use `available` package -- see next slide)
-* Must start with a letter \&amp; cannot end with a period
+* Must start with a letter &amp; cannot end with a period
 * Do not use special characters
 * Trend towards using all lower case
 * Hadley's book has [more information](https://r-pkgs.org/workflows101.html?q=naming#naming)
@@ -356,7 +356,7 @@ Every data set should come with a description
 #' @references Price, C.J., Kimmel, C.A., Tyl, R.W. and Marr, M.C. (1985).
 #' The developmental toxicity of ethylene glycol in rats and mice.
 #' Toxicological Applications in Pharmacology, 81, 113-127.
-"toydata" 
+"exampledata" 
 ```
 
 ---
@@ -405,7 +405,7 @@ devtools::spell_check()
   + Set your username in Git
   + Set your commit email address in Git
 * Create a [GitHub](https://github.com/) account
-  + Create a new repository
+  + Create a new repository for your package (manually or automatically)
   
 ---
 
@@ -475,7 +475,7 @@ git push -u origin master
 
 ## Method 2: With `usethis` package
 
-Initialize version control of your slides with git
+Initialize version control of your local package with git
 
 ```r
 usethis::use_git()
