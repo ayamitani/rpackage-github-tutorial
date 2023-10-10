@@ -581,7 +581,7 @@ library(yourpackage)
 * [Book by Hadley Wickham and Jenny Bryan](https://r-pkgs.org/)
 * [Happy Git and GitHub for the useR](https://happygitwithr.com/)
 * [devtools cheatsheet](https://rstudio.github.io/cheatsheets/package-development.pdf)
-* [Blog post by MZES Social Science Data La](https://www.mzes.uni-mannheim.de/socialsciencedatalab/article/r-package/)
+* [Blog post by MZES Social Science Data Lab](https://www.mzes.uni-mannheim.de/socialsciencedatalab/article/r-package/)
 * [Tutorial by Karl Broman](https://kbroman.org/pkg_primer/)
 * [Writing R Extensions](https://cran.r-project.org/doc/manuals/r-release/R-exts.html)
 
