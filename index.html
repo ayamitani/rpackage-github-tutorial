@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="author" content="Aya Mitani" />
     <meta name="author" content="Doctoral Seminar Series Winter 2022" />
-    <meta name="date" content="2022-04-14" />
+    <meta name="date" content="2023-10-10" />
     <script src="index_files/header-attrs/header-attrs.js"></script>
     <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
   </head>
@@ -13,10 +13,18 @@
     <textarea id="source">
 class: center, middle, inverse, title-slide
 
+.title[
 # Write your own R package and share it on GitHub
+]
+.author[
 ### Aya Mitani
+]
+.author[
 ### Doctoral Seminar Series Winter 2022
-### 2022-04-14
+]
+.date[
+### 2023-10-10
+]
 
 ---
 
@@ -134,7 +142,7 @@ class: center, middle, inverse, title-slide
 * Must start with a letter &amp; cannot end with a period
 * Do not use special characters
 * Trend towards using all lower case
-* Hadley's book has [more information](https://r-pkgs.org/workflows101.html?q=naming#naming)
+* Hadley's book has [more information](https://r-pkgs.org/workflow101.html#name-your-package)
 
 
 ---
@@ -577,7 +585,7 @@ library(yourpackage)
 
 * [Book by Hadley Wickham and Jenny Bryan](https://r-pkgs.org/)
 * [Happy Git and GitHub for the useR](https://happygitwithr.com/)
-* [devtools cheatsheet](https://rstudio.com/wp-content/uploads/2015/03/devtools-cheatsheet.pdf)
+* [devtools cheatsheet](https://rstudio.github.io/cheatsheets/package-development.pdf)
 * [Blog post by MZES Social Science Data La](https://www.mzes.uni-mannheim.de/socialsciencedatalab/article/r-package/)
 * [Tutorial by Karl Broman](https://kbroman.org/pkg_primer/)
 * [Writing R Extensions](https://cran.r-project.org/doc/manuals/r-release/R-exts.html)
@@ -631,6 +639,19 @@ if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
     deleted = true;
   });
 })();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
 (function() {
   "use strict"
   // Replace <script> tags in slides area to make them executable

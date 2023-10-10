@@ -157,7 +157,7 @@ knitr::include_graphics("images/dplyrggplot2.png")
 * Must start with a letter & cannot end with a period
 * Do not use special characters
 * Trend towards using all lower case
-* Hadley's book has [more information](https://r-pkgs.org/workflows101.html?q=naming#naming)
+* Hadley's book has [more information](https://r-pkgs.org/workflow101.html#name-your-package)
 
 
 ---
@@ -580,7 +580,7 @@ library(yourpackage)
 
 * [Book by Hadley Wickham and Jenny Bryan](https://r-pkgs.org/)
 * [Happy Git and GitHub for the useR](https://happygitwithr.com/)
-* [devtools cheatsheet](https://rstudio.com/wp-content/uploads/2015/03/devtools-cheatsheet.pdf)
+* [devtools cheatsheet](https://rstudio.github.io/cheatsheets/package-development.pdf)
 * [Blog post by MZES Social Science Data La](https://www.mzes.uni-mannheim.de/socialsciencedatalab/article/r-package/)
 * [Tutorial by Karl Broman](https://kbroman.org/pkg_primer/)
 * [Writing R Extensions](https://cran.r-project.org/doc/manuals/r-release/R-exts.html)
